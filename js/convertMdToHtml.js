@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         html = converter.makeHtml(text);
     
     console.log(text); // just preventive debug, will be remove
-    document.getElementById('outputBox').innerHTML = html;
+    document.getElementById('html-output-area').innerHTML = html;
 
     setTimeout(function() {
         var hash = window.location.hash;

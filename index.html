@@ -3,10 +3,33 @@
   <head>
     <meta charset='utf-8'>
     <title>Сайт учителя</title>
+    <link rel='stylesheet' href='css/style.css'>
   </head>
   <body>
+    <div id='fixed-header'>
+      <!-- Хэдер тоже лучше создавать через скрипт. Страниц может быть много... -->
+    </div>
+    <div id='main-area'>
+      <div id='left-area' class='main-area-body-block'>
+        <div id='sidebar'>
+          <!-- Колонки сайдбара будут формироваться скриптом.
+          Т.к. сайт статичный, то каждая новая страница будет создаваться заново (будет шаблон для копипаста).
+          Поэтому проще некоторые области создавать через скрипт.
+          Таким образом, достаточно будет поправить скрипт, чтобы на всех страницах был актуальный сайдбар. -->
+        </div>
+      </div>
+      <div id='right-area' class='main-area-body-block'>
+        <div id='content'>
+          <!-- Контент для каждой страницы будет создаваться вручную, но с помощью Markdown, а не HTML. -->
+          <div id='html-output-area'></div> 
+        </div>
+    </div>
+      <div id='float-footer'>
+        <!-- Насчет футера пока не решил. Вероятно, здесь ничего особого не будет. -->
+      </div>
+    </div>
+
     <!--input type="button" value="Convert" onclick="run()"-->
-    <div id='outputBox'></div>
     <script src='https://cdn.rawgit.com/showdownjs/showdown/1.9.0/dist/showdown.min.js'></script>
     <script src='js/convertMdToHtml.js'></script>
   </body>
