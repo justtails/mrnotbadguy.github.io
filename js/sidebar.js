@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     var link = window.location.pathname;
-    if (link == '/' || link == 'index.html')
+    if (link == '/' || link == '/index.html')
     {
         document.getElementById('main-page').style.background = '#CCC';
     }
