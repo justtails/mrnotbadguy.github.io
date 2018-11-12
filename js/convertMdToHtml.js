@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var text = document.querySelector('noscript').innerText.trim(),
         html = converter.makeHtml(text);
     
-    console.log(text); // just preventive debug, will be remove
+    // console.log(text); // just preventive debug, will be remove
     document.getElementById('html-output-area').innerHTML = html;
 
     setTimeout(function() {

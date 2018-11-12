@@ -9,38 +9,57 @@
     <div id='fixed-header'>
       <!-- Хэдер тоже лучше создавать через скрипт. Страниц может быть много... -->
     </div>
-    <div id='main-area'>
-      <div id='left-area' class='main-area-body-block'>
-        <div id='sidebar'>
+    <div id='body-area'>
+      <div id='center-area' class='clearfix'>
+        <div id='left-area' class='center-area-block-style'>
           <!-- Колонки сайдбара будут формироваться скриптом.
-          Т.к. сайт статичный, то каждая новая страница будет создаваться заново (будет шаблон для копипаста).
-          Поэтому проще некоторые области создавать через скрипт.
-          Таким образом, достаточно будет поправить скрипт, чтобы на всех страницах был актуальный сайдбар. -->
+            Т.к. сайт статичный, то каждая новая страница будет создаваться заново (будет шаблон для копипаста).
+            Поэтому проще некоторые области создавать через скрипт.
+            Таким образом, достаточно будет поправить скрипт, чтобы на всех страницах был актуальный сайдбар. -->
+          <div id='sidebar'>
+            <div id='main-page' class='sidebar-elements-style'>Главная</div>
+            <div id='main-page-2' class='sidebar-elements-style'></div>
+          </div>
+        </div>
+        <div id='right-area' class='center-area-block-style'>
+          <div id='content'>
+            <!-- Контент для каждой страницы будет создаваться вручную, но с помощью Markdown, а не HTML. -->
+            <div id='html-output-area'></div> 
+          </div>
         </div>
       </div>
-      <div id='right-area' class='main-area-body-block'>
-        <div id='content'>
-          <!-- Контент для каждой страницы будет создаваться вручную, но с помощью Markdown, а не HTML. -->
-          <div id='html-output-area'></div> 
-        </div>
-    </div>
-      <div id='float-footer'>
-        <!-- Насчет футера пока не решил. Вероятно, здесь ничего особого не будет. -->
-      </div>
+      <!--div id='float-footer'>
+        Насчет футера пока не решил. Вероятно, здесь ничего особого не будет.>
+      </div-->
     </div>
 
     <!--input type="button" value="Convert" onclick="run()"-->
     <script src='https://cdn.rawgit.com/showdownjs/showdown/1.9.0/dist/showdown.min.js'></script>
     <script src='js/convertMdToHtml.js'></script>
+    <script src='js/sidebar.js'></script>
   </body>
 </html>
 
 <!-- Область для вставки Markdown кода -->
 <noscript>
+  # Header
+  Welcome to my simplest site
+      
+  - A
+  - awesome
+  - list
+
 # Header
-Welcome to my simplest site
-    
-- A
-- awesome
-- list
+  Welcome to my simplest site
+      
+  - A
+  - awesome
+  - list
+
+# Header
+  Welcome to my simplest site
+      
+  - A
+  - awesome
+  - list
 </noscript>
