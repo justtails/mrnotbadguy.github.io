@@ -25,6 +25,14 @@ body
 {
 }
 
+.sidebar-link-style
+{
+  text-decoration: none;
+  color: rgb(0,0,0);
+  font-size: 11pt;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
 .sidebar-elements-style
 {
   padding-top: 10px;
@@ -47,7 +55,7 @@ body
   position: fixed;
   z-index: 100;
   background: rgb(36, 40, 43);
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 #body-area
@@ -59,7 +67,7 @@ body
   overflow-x: hidden;
   position: fixed;
   z-index: 0;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
 }
 
 #center-area

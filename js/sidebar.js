@@ -11,22 +11,30 @@ function doListInSidebar()
 {
     const styleClass = 'sidebar-elements-style';
     var sidebar = document.getElementById('sidebar');
-    var element = null;
+    var element = null,
+        link = null;
 
     // На главную
+    link = document.createElement('a');
+    link.setAttribute('href', '/');
+    link.setAttribute('class', 'sidebar-link-style');
+    sidebar.appendChild(link);
     element = document.createElement('div');
     element.setAttribute('id', 'main-page');
     element.setAttribute('class', styleClass);
-    // Добавить создание ссылки
     element.innerText = 'Главная';
-    sidebar.appendChild(element);
+    link.appendChild(element);
 
     // О сайте
+    link = document.createElement('a');
+    link.setAttribute('href', '/about.html');
+    link.setAttribute('class', 'sidebar-link-style');
+    sidebar.appendChild(link);
     element = document.createElement('div');
     element.setAttribute('id', 'about-page');
     element.setAttribute('class', styleClass);
     element.innerText = 'О сайте';
-    sidebar.appendChild(element);
+    link.appendChild(element);
 }
 
 function doFadeOutSidebarElement()
@@ -35,6 +43,12 @@ function doFadeOutSidebarElement()
     if (link == '/' || link == '/index.html')
     {
         document.getElementById('main-page').style.background = '#CCC';
+        document.getElementById('main-page').style.fontWeight = 'bold';
+    }
+    if (link == '/about.html')
+    {
+        document.getElementById('about-page').style.background = '#CCC';
+        document.getElementById('about-page').style.fontWeight = 'bold';
     }
 }
 

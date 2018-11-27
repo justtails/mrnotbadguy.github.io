@@ -49,8 +49,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 'externalLink')
      */
     
-    var text = document.querySelector('noscript').innerText.trim(),
-        html = converter.makeHtml(text);
+    var text;
+    if ( (document.querySelector('noscript').innerText != null))
+    {
+        text = document.querySelector('noscript').innerText.trim();
+    }
+    
+    var html = converter.makeHtml(text);
     
     // console.log(text); // just preventive debug, will be remove
     document.getElementById('html-output-area').innerHTML = html;
