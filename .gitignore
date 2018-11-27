@@ -1,4 +1,5 @@
 index.js
 *.md
+*.psd
 /node_modules
 /.vscode

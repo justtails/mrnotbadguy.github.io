@@ -65,6 +65,24 @@ window.onresize = function(e) {
     }
 }
 
+var hidden = false;
+
+function changeSidebarCond(){
+    var obj = document.getElementById('header-rollup-sidebar-btn');
+    if (!hidden)
+    {
+        obj.setAttribute('class', 'img-rot anim1');
+        doHiddenSidebar();
+        hidden = true;
+    }
+    else
+    {
+        obj.setAttribute('class', 'img-rot anim2');
+        doVisibleSidebar();
+        hidden = false;
+    }
+}
+
 function doHiddenSidebar()
 {
     larea.style.visibility = 'hidden';
