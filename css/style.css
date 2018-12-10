@@ -84,6 +84,17 @@ body
   transform: none;
 }
 
+#site-name
+{
+  margin: 8px;
+  text-align: center;
+  color: white;
+  font-size: 200%;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
 #body-area
 {
   bottom: 0;
