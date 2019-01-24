@@ -25,6 +25,17 @@ function doListInSidebar()
     element.innerText = 'Главная';
     link.appendChild(element);
 
+    // Материалы
+    link = document.createElement('a');
+    link.setAttribute('href', '/materials.html');
+    link.setAttribute('class', 'sidebar-link-style');
+    sidebar.appendChild(link);
+    element = document.createElement('div');
+    element.setAttribute('id', 'mat-page');
+    element.setAttribute('class', styleClass);
+    element.innerText = 'Материалы';
+    link.appendChild(element);
+
     // О сайте
     link = document.createElement('a');
     link.setAttribute('href', '/about.html');
@@ -44,6 +55,11 @@ function doFadeOutSidebarElement()
     {
         document.getElementById('main-page').style.background = '#CCC';
         document.getElementById('main-page').style.fontWeight = 'bold';
+    }
+    if (link == '/materials.html')
+    {
+        document.getElementById('mat-page').style.background = '#CCC';
+        document.getElementById('mat-page').style.fontWeight = 'bold';
     }
     if (link == '/about.html')
     {

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Материалы</title>
+    <link rel='stylesheet' href='css/style.css'>
+  </head>
+  <body>
+    <div id='fixed-header'>
+      <div id='header-rollup-sidebar-btn' class='img-rot' onclick='changeSidebarCond()'></div>
+      <div id='site-name'>Учебные Материалы</div>
+    </div>
+    <div id='body-area'>
+      <div id='center-area' class='clearfix'>
+        <div id='left-area' class='center-area-block-style'>
+          <div id='sidebar'></div>
+        </div>
+        <div id='right-area' class='center-area-block-style'>
+          <div id='content'>
+            <!-- Контент для каждой страницы будет создаваться вручную, но с помощью Markdown, а не HTML. -->
+            <div id='html-output-area'></div> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--input type="button" value="Convert" onclick="run()"-->
+    <script src='https://cdn.rawgit.com/showdownjs/showdown/1.9.0/dist/showdown.min.js'></script>
+    <script src='js/convertMdToHtml.js'></script>
+    <script src='js/sidebar.js'></script>
+  </body>
+</html>
+
+<noscript>
+# Материалы
+
+Для подготовки к самостоятельной работе по математической логике в информатике, стоит свериться с соответствующим банком заданий:
+[Банк заданий (PDF)](/bank_zadaniy.pdf)
+
+Обучающие видео от Департамента образования города Москвы и МГИУ
+
+[![Видео 1](https://img.youtube.com/vi/UrTFyYj-YG4/0.jpg)](https://www.youtube.com/watch?v=UrTFyYj-YG4)
+
+[![Видео 2](https://img.youtube.com/vi/3tDx6JYMcpQ/0.jpg)](https://www.youtube.com/watch?v=3tDx6JYMcpQ)
+</noscript>
